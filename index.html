@@ -12,28 +12,40 @@
 <body>
     <div class="parent_container">
         <div class="image_background">
-            <div class="transparent_container"></div>
-             <div class="text_container"></div>
+            <div class="transparent_container">
+                <img src="Picture1.svg">
+            </div>
+             <div class="text_container"><h1>This is a test to showcase my html and css skills! <em>Hope you enjoy checking it out!</em> This page also includes a form!</h1></div>
             
              <div class="bottom_container">
                 <form action="https://httpbin.org/post" method="post">
-                    <div>
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" placeholder="email@emailaddress.com">
-                    </div>    
-            
-                    <fieldset>
-                        <div>
-                            <label for="first_name">First Name:</label>
-                            <input type="text" name="first_name" id="first_name">
+                    <!-- Intro to the form -->
+                    <p class="garamond">Please fill out the following details:</p>
+                    <!-- Form fields -->
+                    <div class="form_fields"> <!-- Enclose form fields in a container -->
+                        <div class="column"> <!-- First column -->
+                            <label for="first_name" class="garamond">First Name:</label>
+                            <input type="text" required name="first_name" id="first_name">
+
+                            <label for="email" class="garamond">Email:</label>
+                            <input type="text" required id="email" placeholder="email@emailaddress.com">
+
+                            <label for="password" class="garamond">Password:</label>
+                            <input type="text" id="password">
                         </div>
-                        <div>
-                            <label for="last_name">Last Name:</label>
-                            <input type="text" name="last_name" id="last_name">
+                        <div class="column"> <!-- Second column -->
+                            <label for="last_name" class="garamond">Last Name:</label>
+                            <input type="text" required name="last_name" id="last_name">
+                            
+                            <label for="phone" class="garamond">Phone number:</label>
+                            <input type="text" id="phone" placeholder="(613) 555-5555">
+                            
+                            <label for="password2" class="garamond">Confirm password:</label>
+                            <input type="text" id="password2">
                         </div>
-                    </fieldset>
-           
-                <button type="submit">Submit</button>
+                    </div>
+                    <!-- Submit button -->
+                    <button type="submit" class="garamond">Create Account</button>
             </form>
          </div>
         </div>

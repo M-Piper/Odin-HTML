@@ -1,5 +1,20 @@
 /* style.css */
 
+.garamond {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+p {
+    font-size:24px; 
+}
+
+h1 {
+    font-size: 36px; 
+}
+
 body {
     background-color: #fcd75c; 
     margin: 0;
@@ -8,6 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .parent_container {
@@ -33,6 +49,7 @@ body {
     top: 20%;
     width: 40%;
     height: 20%;
+    text-align: center;
     background: rgba(255, 255, 255, 0.7);
 }
 
@@ -43,6 +60,11 @@ body {
     width: 60%;
     height: 40%;
     background: rgb(255, 249, 215);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%; /* Add padding at the sides */
+    box-sizing: border-box; /* Include padding in the width calculation */
 }
 
 form {
@@ -53,6 +75,28 @@ form {
     background-color: white;
     padding: 0px;
     border-radius: 0px;    
+    font-size: 18px; 
+}
+
+.form_fields {
+    display: flex; 
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 1; 
+    margin-right: 10px; 
+    margin-left: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 1px; 
+}
+
+input[type="text"] {
+    margin-bottom: 30px; 
 }
 
 .bottom_container {
@@ -62,4 +106,19 @@ form {
     width: 60%;
     height: 60%; 
     background: rgb(255, 249, 215);
+}
+
+
+button {
+    border-radius: 10px; 
+    background-color: #ff5e00;
+    color: white;
+    padding: 10px 20px;
+    border:rgb(255, 102, 0);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3300; 
 }
