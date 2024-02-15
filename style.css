@@ -1,0 +1,65 @@
+/* style.css */
+
+body {
+    background-color: #fcd75c; 
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent_container {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    display: flex; 
+}
+
+.image_background {
+    background-image: url('https://assets-cdn.vam.ac.uk/2017/12/15/10/36/11/3f06a23d-8da9-48c4-892e-d781231d8b7c/1280.jpg');
+    background-size: cover;
+    background-position: center;
+    flex: 1; /* Take remaining space */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.transparent_container {
+    position: absolute;
+    left: 0%;
+    top: 20%;
+    width: 40%;
+    height: 20%;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.text_container {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 60%;
+    height: 40%;
+    background: rgb(255, 249, 215);
+}
+
+form {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 100%; 
+    background-color: white;
+    padding: 0px;
+    border-radius: 0px;    
+}
+
+.bottom_container {
+    position: absolute;
+    right: 0%;
+    top: 40%;
+    width: 60%;
+    height: 60%; 
+    background: rgb(255, 249, 215);
+}
